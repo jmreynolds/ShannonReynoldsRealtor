@@ -1,5 +1,0 @@
-c:\users\infocraft\documents\visual studio 14\Projects\ShannonReynoldsRealtor\Core\bin\Debug\Core.dll
-c:\users\infocraft\documents\visual studio 14\Projects\ShannonReynoldsRealtor\Core\bin\Debug\Core.pdb
-c:\users\infocraft\documents\visual studio 14\Projects\ShannonReynoldsRealtor\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
-c:\users\infocraft\documents\visual studio 14\Projects\ShannonReynoldsRealtor\Core\obj\Debug\Core.dll
-c:\users\infocraft\documents\visual studio 14\Projects\ShannonReynoldsRealtor\Core\obj\Debug\Core.pdb
