@@ -4,20 +4,59 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% if post.highlight %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <div class="row">
+            <ul class="post-list">
+                <div class="highlight-item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-12">
+                            <img src="{{post.image}}" class="img-responsive" alt="{{post.title}}">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <span class="label label-info">{{post.title}}</span> {{post.excerpt}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-4 col-lg-6">
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-4 col-lg-6">
+                            <a href="{{ post.url | prepend: site.google.url }}" class="btn btn-xs btn-info" role="button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+    </div>
+
+      <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn-high-{{ post.id }}">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-high-{{ post.id }}">
+        <li><a href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href={{ post.url | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+        <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+        <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+      </ul>-->
+
+
+    {% else %}
+
+    Something else
+
+    {% endif %}
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.github.url }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{site.github.url}}/feed.xml">via RSS</a></p>
 
 </div>
+
+
+
+
+

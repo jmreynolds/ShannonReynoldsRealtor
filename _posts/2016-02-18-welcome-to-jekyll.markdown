@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2016-02-20 21:30:37 -0600
+date:   2016-02-18 20:30:37 -0600
 categories: jekyll update
 image: http://www.placekitten.com/1600/1200
 highlight: true
