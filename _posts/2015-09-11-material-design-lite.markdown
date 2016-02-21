@@ -4,6 +4,7 @@ title:  "Material Design Lite"
 date:   2015-09-11 13:34:20
 categories: Material
 author: Byron Corrales
+image: http://placekitten.com/1600/1200
 ---
 But it's not who you are underneath... it's what you do that defines you. Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther. You're skilled. But this is not a dance. And you are afraid.
 
